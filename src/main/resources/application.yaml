@@ -1,0 +1,31 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: edsonklibrsouza2015@gmail.com
+    password: ovqq cqbd nsoy rqxg
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
+            fallback: false
+          auth: true
+          startlls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
+  thymeleaf:
+    enable: true
+
+envio:
+  email:
+    remetente: edsonklibrsouza2015@gmail.com
+    nomeRemetente: 'Edson Vinicius'
+
+server:
+  port: 8082
